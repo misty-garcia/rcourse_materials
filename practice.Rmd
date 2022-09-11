@@ -1,0 +1,49 @@
+---
+title: "practice"
+output: html_document
+date: '2022-09-11'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(lubridate)
+```
+
+
+
+```{r}
+today()
+```
+```{r}
+now()
+```
+
+```{r}
+ymd("2017-01-31")
+#> [1] "2017-01-31"
+mdy("January 31st, 2017")
+#> [1] "2017-01-31"
+dmy("31-Jan-2017")
+#> [1] "2017-01-31"
+```
+```{r}
+ymd(20170131)
+#> [1] "2017-01-31"
+```
+
+```{r}
+mdy("January 1, 2010")
+
+ymd("2015-Mar-07")
+
+dmy("06-Jun-2017")
+
+mdy(c("August 19 (2015)", "July 1 (2015)"))
+
+mdy("12/30/14") # Dec 30, 2014
+
+```
+
